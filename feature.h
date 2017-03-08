@@ -1,9 +1,6 @@
 #ifndef feature
 #define feature
 
-class feature
-{
-
-};
+typedef int feature;
 
 #endif

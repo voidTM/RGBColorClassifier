@@ -3,13 +3,15 @@
 
 #define CLASS_NOT_FOUND -1
 
-#include "feature.h"
+//#include "feature.h"
 #include <string>
 #include <vector>
 #include <fstream>
 #include <stdio.h>
+#include <iostream>
 #include <cstring>
 #include <sstream>
+#include <algorithm>
 
 using namespace std;
 //RGB colormap
@@ -17,7 +19,7 @@ class ColorMap
 {
   //3d color map
   private:
-    int map[255][255][255];
+    int rgbmap[255][255][255];
     string mapDataAddress; //address to the colormap data
 
   protected:
@@ -27,7 +29,7 @@ class ColorMap
     ColorMap();
     ColorMap(string addr);
 
-    maptoRGB(int R, int G, int B);
+    int maptoRGB(int R, int G, int B);
 
 };
 
