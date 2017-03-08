@@ -19,17 +19,19 @@ class ColorMap
 {
   //3d color map
   private:
-    int rgbmap[255][255][255];
+    int*** rgbmap; // too large
+
     string mapDataAddress; //address to the colormap data
 
   protected:
-    void fillMap(){}; //
+    void fillMap(); //
+    void init();
 
   public:
-    ColorMap(){};
-    ColorMap(string addr){};
+    ColorMap();
+    ColorMap(string addr);
 
-    int maptoRGB(int R, int G, int B){};
+    int maptoRGB(int R, int G, int B);
 
 };
 

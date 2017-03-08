@@ -6,21 +6,16 @@
 #include <string>
 #include <vector>
 //#include <opencv2/imgproc/imgproc.hpp>
-#include <random>
 #include <fstream>
-//#include "colormap.h"
+#include "colormap.h"
 
 using namespace std;
 //using namespace cv;
-class Foo
-{
-  public:
-    Foo() {};
-    Foo(int a) {};
-    void bar() {};
-};
 
 int main(){
-	Foo test;
 	int m;
+
+	ColorMap map;
+
+	map.maptoRGB(10,1,5);
 }
