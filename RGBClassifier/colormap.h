@@ -23,9 +23,6 @@ class ColorMap
 
     string mapDataAddress; //address to the colormap data
     vector<vector<int>> labelSet;
-    vector<int*>red;
-    vector<int*>green;
-    vector<int*>blue;
     map<vector<int>, int>colorMap;
   protected:
     void fillMap(); //
