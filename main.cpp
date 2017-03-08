@@ -8,16 +8,19 @@
 //#include <opencv2/imgproc/imgproc.hpp>
 #include <random>
 #include <fstream>
-#include "colormap.h"
+//#include "colormap.h"
 
 using namespace std;
 //using namespace cv;
+class Foo
+{
+  public:
+    Foo() {};
+    Foo(int a) {};
+    void bar() {};
+};
 
 int main(){
+	Foo test;
 	int m;
-	int colormap[255][255][255];
-
-	ColorMap map;
-
-	map.maptoRGB(10,1,5);
 }
