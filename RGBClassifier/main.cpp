@@ -17,6 +17,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
   ColorMap map;
   int label;
+  cout << "This is a sample test of the ColorMap Classifier"
   label = map.getClass(1, 22, 25);
   label = map.getClass(0,	55,	88);
   if(label == CLASS_NOT_FOUND)
