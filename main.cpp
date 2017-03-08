@@ -5,15 +5,19 @@
 //#include <opencv2/highgui/highgui.hpp>
 #include <string>
 #include <vector>
-#include "colormap.h"
 //#include <opencv2/imgproc/imgproc.hpp>
 #include <random>
 #include <fstream>
+#include "colormap.h"
 
 using namespace std;
 //using namespace cv;
 
 int main(){
-	cout << "Starting Program" << endl;
+	int m;
+	int colormap[255][255][255];
+
 	ColorMap map;
+
+	map.maptoRGB(10,1,5);
 }

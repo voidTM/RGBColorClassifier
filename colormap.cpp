@@ -4,7 +4,7 @@
 // might move to seperate class for reading.
 // reads the file and tokenize by line
 vector<vector<string>> readFile(ifstream& in)
-{
+{/*
     string line;
     string word;
     stringstream stream;
@@ -23,13 +23,12 @@ vector<vector<string>> readFile(ifstream& in)
       dataSet.push_back(lineTok);
     }
 
-    return dataSet;
+    return dataSet;*/
 }
 
 // constructors
 ColorMap::ColorMap()
-{
-  /*
+{/*
   mapDataAddress = "colormap_data.tsv";
   ifstream colorMapFile; //file containing the colormap
 	colorMapFile.open(mapDataAddress);
@@ -45,12 +44,11 @@ ColorMap::ColorMap()
     cerr << "Error Default ColorMap datafile not found. " << endl;
     exit(1);
   }
-  fillMap();
-  */
+  fillMap();*/
 }
 
 ColorMap::ColorMap(string addr)
-{
+{/*
   mapDataAddress = addr;
   ifstream colorMapFile; //file containing the colormap
 	colorMapFile.open(mapDataAddress);
@@ -64,7 +62,7 @@ ColorMap::ColorMap(string addr)
     cerr << "Error Default ColorMap datafile not found. " << endl;
     exit(1);
   }
-  fillMap();
+  fillMap();*/
 }
 
 // Protected
@@ -72,13 +70,13 @@ ColorMap::ColorMap(string addr)
 // fills the color map with the default valueset.
 void ColorMap::fillMap()
 {
-  cout << rgbmap[0][0][0] << endl;
+  //fill(rgbmap[0], rgbmap[0] + 255 * 255 * 255, 0);
 }
 
 
 int ColorMap::maptoRGB(int R, int G, int B)
 {
-  return rgbmap[R][G][B];
+  //return rgbmap[R][G][B];
 }
 
 //ColorMap::

@@ -1,7 +1,6 @@
 #ifndef COLORMAP_H
 #define COLORMAP_H
 
-#define CLASS_NOT_FOUND -1
 
 //#include "feature.h"
 #include <string>
@@ -15,6 +14,7 @@
 
 using namespace std;
 //RGB colormap
+
 class ColorMap
 {
   //3d color map
@@ -23,13 +23,13 @@ class ColorMap
     string mapDataAddress; //address to the colormap data
 
   protected:
-    void fillMap(); //
+    void fillMap(){}; //
 
   public:
-    ColorMap();
-    ColorMap(string addr);
+    ColorMap(){};
+    ColorMap(string addr){};
 
-    int maptoRGB(int R, int G, int B);
+    int maptoRGB(int R, int G, int B){};
 
 };
 
