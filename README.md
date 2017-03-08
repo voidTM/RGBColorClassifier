@@ -11,3 +11,4 @@ Default is colormap_data.tsv
 
 ComplexClassifier
 Should classify a class based on RGB values within a range as part of a class.
+Currently Broken and not fully implemented. When working it should be tree based.
